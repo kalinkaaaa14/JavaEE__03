@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="input-group mt-4">
+        <input type="text" class="form-control" placeholder=""  id="searchInput">
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id="searchButton">Search</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-3 mt-4" >
+            <form id="addNewBook">
+                <h5 class="text-center mt-1">Add New Book!</h5>
+                <div class="form-group">
+                    <h6>ISBN</h6>
+                    <input required type="text" name="isbn"  class="form-control" id="isbn">
+                </div>
+                <div class="form-group">
+                    <h6>Title</h6>
+                    <input required type="text" name="title" class="form-control" id="title">
+                </div>
+                <div class="form-group">
+                    <h6>Author</h6>
+                    <input required type="text" name="author" class="form-control" id="author">
+                </div>
+                <div class="form-row text-center mt-4">
+                    <button  class="btn btn-outline-dark btn-block" role="button" id="addButton" type="button" aria-disabled="true">Add a book</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-9 mt-4" id="tableBook"></div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
